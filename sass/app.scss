@@ -1,13 +1,15 @@
 // Global Foundation Settings
 @import "settings";
 
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
-// @import "foundation/foundation-global"; // *always required
 // @import "foundation/components/global"; // *always required
 // @import "foundation/components/grid";
 // @import "foundation/components/visibility";
@@ -43,7 +45,6 @@
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
-/* Colors */
 
 $darkblue: #6accf3;
 $lightblue: #cfebf9; 
@@ -52,338 +53,52 @@ $white: #ffffff;
 $lightgrey: #f2f2f2;
 $darkgrey: #676767;
 
-li.name h1 a{
-	background: url('../images/circle-logo-white.png') no-repeat center center;
-	text-indent: -9999px;
-	width: 100px !important;
-	height: 100px;
-	display: block;
-	position: relative;
-	z-index: 999;
-	background-size: contain;
-	border: 10px solid #000;
-	border-radius: 50px;
-	margin-left: 20px;
-	@media only screen and (max-width: 768px){
-	width: 46px;
-	height: 46px;
-	padding: 0px;
-	margin: 0px;
-	}
-}
-#footer{
-	background: #000;
-	color: #000 !important;
-	padding-bottom: 40px;
-	h3{
-	padding-top: 20px;
-	}
-}
-#coming-soon{
-	box-shadow: 0px -3px 20px rgba(0,0,0,0.1);
-	position: relative;
-	z-index: 6;
-	background-image: url('../images/email-subscription.png'), -webkit-linear-gradient(darken($darkblue,25%),darken($darkblue,30%));
-	background-color: darken($darkblue, 25%);
-	background-repeat: no-repeat;
-	@media only screen and (min-width: 768px) {
-		background-repeat: no-repeat, repeat;
-		background-position: 400px, 0px;
-	}
-	color: #fff;
-	font-size: 0.9em;
-	@media only screen and (min-width: 768px) { padding-bottom: 20px;}
-	padding-bottom: 60px;
-	h2{
-	padding-top: 20px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	color: #fff;
-	}
-	#mc_embed_signup{
-	
-@media only screen and (min-width: 768px) {
-position: relative;
-top: 80px;
-background: rgba(0,0,0,0.3);
-height: 50px;
-padding-top: 10px;
-border-radius: 15px;
-}
-		.email-section{
-		padding-right: 0px;
-		}
-		.submit-section{
-			padding: 0px 10px 0px 0px;
-			input#mc-embedded-subscribe{
-			display: block;
-			width: 100%;
-			border: 0px;
-			height: 30px;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
-			background: -webkit-linear-gradient(darken($lightblue, 15%), darken($lightblue,30%));
-			font-family: 'open sans';
-			font-weight: 600;
-			text-transform: uppercase;
-			text-shadow: 0px -1px 1px rgba(255,255,255,0.5);
-			color: #fff;
-			line-height: 8px;
-			}
-		}
-		input#mce-EMAIL{
-			display: block;
-			width: 100%;
-			height: 30px;
-			padding: 0px 10px;
-			line-height: 30px;
-			margin: 0px;
-			box-shadow: 0px;
-			border: 0px;
-			background: #fff;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-		}
-	}
-}
-
-#landing-page{
-	background: $white;
-	z-index: 100;
-}
-#intro-text #logo{
-	background: #fff url('../images/circle-logo-grey.png') no-repeat center center;
-	background-size: contain;
-
-}
-#timeline{
-	background: #fff url('../images/timeline.png') no-repeat center center;
-	background-size: contain;
-}
-#stock-animation{
-	background: #fff url('../images/stock-animations.png') no-repeat center center;
-	background-size: contain;
-}
-#share-online{
-	background: #fff url('../images/share-online.png') no-repeat center center;
-	background-size: contain;	
-}
-#intro-text{
-	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-	position: relative;
-	background: url('../images/floe-bg-mountains.png') repeat-x center bottom;
-	z-index: 10;
-		h2{
-		font-size: 2.8em;
-		}
-}
-#features{
-	background-image: url('../images/texture.png'), -webkit-linear-gradient($darkgrey, darken($darkgrey, 20%));
-	background-color: $darkgrey;
-	padding: 40px 0px;
-	color: $white;
-	text-align: center;
-	h2{
-	text-align: center;
-	color: $lightblue;
-	}
-	.front-page-icon{
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
-	}
-	.feature{
-	position: relative;
-	z-index: 20;
-	}
-	.bubble{
-		background: rgba(255,255,255,0.5);
-		width: 20px;
-		height: 20px;
-		border-radius: 10px;
-	}
-}
-/*typography*/
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Droid Serif';
-	font-style: italic;
-	letter-spacing: 0.02em;
-	font-weight: 600;
-	color: darken($darkblue, 20%);
-}
+/*typography */
 body{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: #333;
-	font-weight: 0.9em;
-}
-.front-page-icon{
-	background: $darkgrey;
-	height: 120px;
-	width: 120px;
-	border-radius: 120px;
-	margin: -80px auto 0px;
-	padding: 0px;
-	border: 10px solid $white;
-	display: block;
-	-webkit-transition: all .2s ease-in-out;
-}
-.front-page-icon:hover{
-	-webkit-transform: scale(1.2);
-	-webkit-transition: all .2s ease-in-out;
+	font-family: 'Roboto', sans-serif;	
 }
 
-#features h3{
-	text-align: center;
-	font-weight: bold;
-	padding: 30px 0px 0px;
-	color: $darkblue;
-}
-#features .front-page-icon{
-	margin-top: 0px;
-}
-.subtitle{
-	font-family: 'Muli', sans-serif;
-	font-size: 0.3em;
-	text-transform: uppercase;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 2px;
-	line-height: 1.5em;
-	color: $darkgrey;
-}
-h3{
-	text-transform: uppercase;
-	font-size: 0.8em;
-	font-family: 'Muli', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	color: lighten($darkblue,10%);
-}
-/* into animation section */
-#intro-animation{
-	background-image: linear-gradient($darkblue,darken($darkblue,20%));
-	background-color:  $darkblue;
-	position: relative;
-	height: 600px;
+html,body{
 	margin: 0px;
 	padding: 0px;
-	overflow: hidden;
-	@media only screen and (max-width: 768px) {
-	height: 300px;
+}
+.button{
+	
+}
+.windowheight{
+	position: relative;
+	
+}
+/*main-navigation*/
+#main-navigation{
+	position: fixed;
+	h1.logo{
+		display: block;
+		width: 40px;
+		height: 40px;
+		font-size: 10px;
+		background: #fff;		
+		text-align: center;
 	}
 }
-#sun{
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	background: lighten(#f7d342, 20%);
-	right: 100px;
-	z-index: 1;
-	@media only screen and (max-width: 768px) {
-	right: 0px;
-	}
-}
-#mountain{
-	position: absolute;
-	top: 100px;
-	background: url('../images/floe-bg-mountains.png') repeat-x;
-	width: 100%;
-	height: 146px;
-	z-index: 3;
-	@media only screen and (max-width: 768px) {
-	top:56px;
-	}
-}
-#sea{
-	background: $lightblue url('../images/floe-bg-mountains-reflect.png') repeat-x 0px -70px;
-	height: 454px;
-	width: 100%;
-	position: absolute;
-	top: 246px;
-	z-index: 4;
-	@media only screen and (max-width: 768px) {
-	top:190px;
-	}
-}
-#bear{
-	position: relative; 
-	z-index: 5;
-	display: block;
-	background: url('../images/bear.png') no-repeat;
-	background-size: contain;
-	width: 480px;
-	height: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	 -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-	top: 100px;
-	@media only screen and (max-width: 768px) {
-	width: 200px;
-	top:120px;
-	}
+/* home page */
+#welcome-banner{
+	//background: darken($darkblue, 40) url('../images/lightbulb.svg')) no-repeat center bottom;
+	background-color: darken($darkblue, 40);
+	background-image: url('../images/texture.png'), url('../images/mountain.svg');
+	background-repeat: repeat, repeat-x, no-repeat;
+	background-size: 72px, 450px;
+	background-position-y: center, 60%;
+	background-position-x: center, center;
 
 }
-#top-navigation{
+#welcome-message{
 	position: relative;
-	z-index: 999;
-}
-#logo.topnav{
-	background: #fff url('../images/logo.jpg') no-repeat;
-	background-size: contain;
-	height: 209px;
-	float: left;
-	position: relative;
-	box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
-	z-index: 6;
-	width: 161px;
-	left: 15%;
-	top: -5px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	@media only screen and (max-width: 768px) {
-	left: 10px;
-	top: -5px;
-	width: 100px;
-	height:138px;
-	}
-}
-#tagline{
-	width: 33%;
-	top: 5%;
-	font-family: 'Muli', serif;
-	font-weight: 300;
-	text-transform: capitalize;
-	line-height: 1.2em;
-	font-style: italic;
-	color: #fff;
-	font-weight: bold;
-	font-size: 1.8em;
-	position: absolute;
-	margin-left: 50px;
-	z-index: 7;
-	right: 30%;
-	@media only screen and (max-width: 768px) {
-	width: 50%;
-	right: 19%;
-	font-size: 1.5em;
-	top: 5%;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	}
-}
-#screenshots{
-	padding-top: 40px;
-	overflow: hidden;
-}
-#sneak-peek{
-	-webkit-transform: rotate(10deg);
-	box-content: border-box;
-	@media only screen and (max-width: 768px) {
-	margin-top: 100px;
+	top: 25%;	
+	text-align: center;
+	
+	h2{
+		font-size: 1.5em;
+		color: #fff;
 	}
 }
