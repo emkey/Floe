@@ -85,11 +85,11 @@ html,body{
 #welcome-banner{
 	//background: darken($darkblue, 40) url('../images/lightbulb.svg')) no-repeat center bottom;
 	background-color: darken($darkblue, 40);
-	background-image: url('../images/texture.png'), url('../images/mountain.svg');
-	background-repeat: repeat, repeat-x, no-repeat;
-	background-size: 72px, 450px;
-	background-position-y: center, 60%;
-	background-position-x: center, center;
+	background-image: url('../images/mountain.svg');
+	background-repeat:repeat-x;
+	background-size: 450px;
+	background-position-y: 60%;
+	background-position-x: center;
 
 }
 #welcome-message{
