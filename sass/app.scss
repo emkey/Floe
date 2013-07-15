@@ -85,11 +85,13 @@ html,body{
 			height: 40px;
 			background-repeat: no-repeat;
 			background-size: 40px;
-			padding-left: 50px;
-			font-size: 3em;
+			padding-left: 45px;
+			font-size: 3.2em;
 			color: #fff;
-			text-transform: capitalize;
+			text-transform:lowercase;
 			font-weight: 100;
+			font-family: 'Georgia', serif;
+			font-style: italic;
 		}
 	}
 }

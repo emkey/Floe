@@ -6689,15 +6689,17 @@ html, body {
   height: 40px;
   background-repeat: no-repeat;
   background-size: 40px;
-  padding-left: 50px;
-  font-size: 3em;
+  padding-left: 45px;
+  font-size: 3.2em;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-weight: 100;
+  font-family: 'Georgia', serif;
+  font-style: italic;
 }
 
 /* home page */
-/* line 97, ../sass/app.scss */
+/* line 99, ../sass/app.scss */
 #welcome-banner {
   background-color: #0b6386;
   background-image: url("../images/mountain.svg");
@@ -6707,13 +6709,13 @@ html, body {
   background-position-x: center;
 }
 
-/* line 107, ../sass/app.scss */
+/* line 109, ../sass/app.scss */
 #welcome-message {
   position: relative;
   top: 25%;
   text-align: center;
 }
-/* line 112, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 #welcome-message h2 {
   font-size: 1.5em;
   color: #fff;
