@@ -71,14 +71,26 @@ html,body{
 }
 /*main-navigation*/
 #main-navigation{
-	position: fixed;
 	h1.logo{
 		display: block;
-		width: 40px;
+		width: 120px;
 		height: 40px;
 		font-size: 10px;
-		background: #fff;		
-		text-align: center;
+		margin-top: 10px;
+		
+		a{
+			background-image: url('../images/floe-white-logo.svg'); 
+			display: block;
+			width: 120px;
+			height: 40px;
+			background-repeat: no-repeat;
+			background-size: 40px;
+			padding-left: 50px;
+			font-size: 3em;
+			color: #fff;
+			text-transform: capitalize;
+			font-weight: 100;
+		}
 	}
 }
 /* home page */
