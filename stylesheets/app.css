@@ -6667,13 +6667,19 @@ html, body {
   padding: 0px;
 }
 
-/* line 68, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
+.button {
+  border: none;
+  box-shadow: none;
+}
+
+/* line 69, ../sass/app.scss */
 .windowheight {
   position: relative;
 }
 
 /*main-navigation*/
-/* line 74, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 #main-navigation h1.logo {
   display: block;
   width: 120px;
@@ -6681,7 +6687,7 @@ html, body {
   font-size: 10px;
   margin-top: 10px;
 }
-/* line 81, ../sass/app.scss */
+/* line 82, ../sass/app.scss */
 #main-navigation h1.logo a {
   background-image: url("../images/floe-white-logo.svg");
   display: block;
@@ -6699,7 +6705,7 @@ html, body {
 }
 
 /* home page */
-/* line 99, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 #welcome-banner {
   background-color: #0b6386;
   background-image: url("../images/mountain.svg");
@@ -6709,13 +6715,13 @@ html, body {
   background-position-x: center;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 #welcome-message {
   position: relative;
   top: 25%;
   text-align: center;
 }
-/* line 114, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 #welcome-message h2 {
   font-size: 1.5em;
   color: #fff;
