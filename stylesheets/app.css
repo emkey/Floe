@@ -6080,12 +6080,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
-/* line 165, ../sass/app.scss */
-#about {
-  padding-top: 20px;
-}
-
-/* line 168, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 #features h3 {
   text-transform: uppercase;
   font-size: 1em;
