@@ -5954,134 +5954,74 @@ table tfoot tr td {
 /*typography */
 /* line 57, ../sass/app.scss */
 body {
+  background: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 html, body {
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  min-height: 100%;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
+#introduction {
+  background-color: #074057;
+  background-image: url("../images/tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 76, ../sass/app.scss */
+.intro-spill {
+  color: #fff;
+  font-size: 1em;
+  height: 300px;
+  width: 300px;
+  background-image: url("../images/ipad.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  line-height: 210px;
+  vertical-align: middle;
+  margin: 0px auto;
+  position: relative;
+  top: 20%;
+  padding-top: 40px;
+}
+
+/* line 92, ../sass/app.scss */
+#intro-block {
+  padding: 40px 0px 40px;
+}
+
+/* line 95, ../sass/app.scss */
+.tagline-text {
+  line-height: 0.1em;
+  font-size: 1em;
+  position: relative;
+  top: -30px;
+}
+
+/* line 101, ../sass/app.scss */
+.drop-cap {
+  font-size: 6em;
+  float: left;
+  line-height: 1em;
+  display: block;
+  width: 120px;
+  height: 90px;
+  font-family: "Rouge Script", cursive;
+  text-align: center;
+  color: #999;
+}
+
+/* line 112, ../sass/app.scss */
 .button {
   border: none;
   box-shadow: none;
-}
-
-/* line 70, ../sass/app.scss */
-.windowheight {
-  position: relative;
-}
-
-/* line 74, ../sass/app.scss */
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 1px;
-}
-
-/*main-navigation*/
-/* line 78, ../sass/app.scss */
-.top-nav {
-  padding-bottom: 0px;
-  height: 48px;
-}
-
-/* line 82, ../sass/app.scss */
-#main-navigation {
-  padding-bottom: 0px;
-  height: 48px;
-}
-/* line 85, ../sass/app.scss */
-#main-navigation h1.logo {
-  display: block;
-  height: 40px;
-  width: 40px;
-  font-size: 10px;
-  background: #222;
-  padding: 0px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  float: left;
-}
-/* line 95, ../sass/app.scss */
-#main-navigation h1.logo a {
-  background-image: url("../images/floe-white-logo.svg");
-  background-position: center center;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: 70%;
-  font-size: 3.2em;
-  color: #fff;
-  text-transform: lowercase;
-  font-weight: 100;
-  font-family: "Georgia", serif;
-  font-style: italic;
-  text-indent: -999px;
-}
-
-/* line 114, ../sass/app.scss */
-.top-navigation {
-  text-align: right;
-  padding-top: 10px;
-}
-/* line 117, ../sass/app.scss */
-.top-navigation li {
-  display: inline;
-  font-size: 0.7em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-right: 5px;
-}
-/* line 123, ../sass/app.scss */
-.top-navigation li a {
-  color: #fff;
-  font-weight: 400;
-  background: rgba(255, 255, 255, 0);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-/* line 131, ../sass/app.scss */
-.top-navigation li:last-child a {
-  background: #222;
-  color: #fff;
-}
-
-/* home page */
-/* line 139, ../sass/app.scss */
-#welcome-banner {
-  background-color: #0b6386;
-  background-image: url("../images/mountain.svg");
-  background-repeat: repeat-x;
-  background-size: 450px;
-  background-position-y: 60%;
-  background-position-x: center;
-}
-
-/* line 149, ../sass/app.scss */
-#welcome-message {
-  position: relative;
-  top: 25%;
-  text-align: center;
-}
-/* line 154, ../sass/app.scss */
-#welcome-message h2 {
-  font-size: 1.5em;
-  color: #fff;
-}
-
-/* line 159, ../sass/app.scss */
-#media-banner {
-  background: #222;
-  min-height: 100px;
-  color: #fff;
-  padding-top: 20px;
-}
-
-/* line 167, ../sass/app.scss */
-#features h3 {
-  text-transform: uppercase;
-  font-size: 1em;
 }
