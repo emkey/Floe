@@ -5982,7 +5982,6 @@ html, body {
   font-size: 1em;
   height: 300px;
   width: 300px;
-  background-image: url("../images/ipad.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -5994,20 +5993,37 @@ html, body {
   padding-top: 40px;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 #intro-block {
   padding: 40px 0px 40px;
 }
 
-/* line 95, ../sass/app.scss */
+/* line 94, ../sass/app.scss */
 .tagline-text {
-  line-height: 0.1em;
-  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 1px;
+  border-top: 1px solid white;
+  font-size: 0.9em;
   position: relative;
-  top: -30px;
+  top: -100px;
+  padding-top: 8px;
+  width: 160px;
+  margin: 0px auto;
+  padding-left: 10px;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
+#learnmore {
+  display: block;
+  background: #ec008c;
+  color: #fff;
+  margin: 15px auto 0px;
+  line-height: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/* line 115, ../sass/app.scss */
 .drop-cap {
   font-size: 6em;
   float: left;
@@ -6020,7 +6036,7 @@ html, body {
   color: #999;
 }
 
-/* line 112, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 .button {
   border: none;
   box-shadow: none;

@@ -78,7 +78,6 @@ html,body{
 	font-size: 1em;
 	height: 300px;
 	width: 300px;
-	background-image: url('../images/ipad.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	text-align: center;
@@ -93,10 +92,25 @@ html,body{
 	padding: 40px 0px 40px;
 }
 .tagline-text{
-	line-height: 0.1em;
-	font-size: 1em;
+	line-height: 1em;
+	letter-spacing: 1px;
+	border-top: 1px solid #fff;
+	font-size: 0.9em;
 	position: relative;
-	top: -30px;
+	top: -100px;
+	padding-top: 8px;
+	width: 160px;
+	margin: 0px auto;
+	padding-left: 10px;
+}
+#learnmore{
+	display: block;
+	background: #ec008c;
+	color: #fff;
+	margin: 15px auto 0px;
+	line-height: 20px;
+	height: 20px;
+	border-radius: 10px;
 }
 .drop-cap{
 	font-size: 6em;
