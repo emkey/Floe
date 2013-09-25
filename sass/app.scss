@@ -52,6 +52,7 @@ $midblue: #bbe1f8;
 $white: #ffffff;
 $lightgrey: #f2f2f2;
 $darkgrey: #676767;
+$pink: #ec008c;
 
 /*typography */
 body{
@@ -59,7 +60,9 @@ body{
 	font-family: 'Roboto', sans-serif;	
 	font-weight: 100;
 }
-
+p{
+	font-weight: 300;
+}
 html,body{
 	margin: 0px;
 	padding: 0px;
@@ -97,7 +100,7 @@ html,body{
 	border-top: 1px solid #fff;
 	font-size: 0.9em;
 	position: relative;
-	top: -100px;
+	top: -20px;
 	padding-top: 8px;
 	width: 160px;
 	margin: 0px auto;
@@ -117,11 +120,12 @@ html,body{
 	float: left;
 	line-height: 1em;
 	display: block;
-	width: 120px;
+	width: 100px;
 	height: 90px;
-	font-family: 'Rouge Script', cursive;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
-	color: #999;
+	color: $pink;
+	font-weight: 600;
 }
 .button{
 border: none;
